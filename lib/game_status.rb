@@ -28,8 +28,8 @@ else
 
 end
 
-def full?
-  @board.all? do |entry|
+def full?(board)
+  board.all? do |entry|
     entry=="X" || entry=="O"
   end
 end
