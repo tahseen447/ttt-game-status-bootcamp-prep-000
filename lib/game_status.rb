@@ -21,7 +21,6 @@ WIN_COMBINATIONS.find do |win_combination|
   win_combination.all? {|i| board[i]=="O"}
 end
 end
-end
 
 def full?(board)
   board.all? do |entry|
