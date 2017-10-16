@@ -38,6 +38,6 @@ def over?(board)
   full? || won?
 end
 
-def winner
+def winner(board)
   "X"
 end
