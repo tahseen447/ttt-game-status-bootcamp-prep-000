@@ -41,3 +41,6 @@ end
 def over?
   full? || won?
 end
+
+def winner
+end
