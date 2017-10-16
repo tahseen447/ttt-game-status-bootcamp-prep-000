@@ -16,15 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  result = []
 WIN_COMBINATIONS.find do |win_combination|
-win_combination.all? do |i|
-  if board[i]=="X" || board[i]=="O"
-  result << win_combination[i]
-else
-  false
-end
-end
+  win_combination.all? {|i| board[i]=="X"} || 
+  win_combination.all? {|i| board[i]=="X"}
 end
 end
 
