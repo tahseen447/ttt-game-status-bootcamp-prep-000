@@ -33,3 +33,7 @@ def full?(board)
     entry=="X" || entry=="O"
   end
 end
+
+def draw?
+  full? && !won?
+end
