@@ -16,6 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  # you can't check won?(board) == false
+  # you can check it with !won?(board) or won?(board) == nil
 WIN_COMBINATIONS.find do |win_combination|
   win_combination.all? {|i| board[i]=="X"} ||
   win_combination.all? {|i| board[i]=="O"}
@@ -28,7 +30,7 @@ def full?(board)
   end
 end
 
-def draw?
+def draw?(board)
   full? && !won?
 end
 
