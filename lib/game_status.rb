@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   result = []
-WIN_COMBINATIONS.each do |win_combination|
+WIN_COMBINATIONS.find do |win_combination|
 win_combination.all? do |i|
   if board[i]=="X" || board[i]=="O"
   result << win_combination[i]
