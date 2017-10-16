@@ -23,6 +23,7 @@ win_combination.all? do |i|
   result << win_combination[i]
 end
 end
+end
 else
   false
 
