@@ -43,4 +43,5 @@ def over?
 end
 
 def winner
+  "X"
 end
