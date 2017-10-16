@@ -21,12 +21,11 @@ WIN_COMBINATIONS.each do |win_combination|
 win_combination.all? do |i|
   if board[i]=="X" || board[i]=="O"
   result << win_combination[i]
-end
-end
-end
 else
   false
-
+end
+end
+end
 end
 
 def full?(board)
