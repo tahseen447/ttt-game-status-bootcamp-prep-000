@@ -14,6 +14,7 @@ WIN_COMBINATIONS = [
   [0,4,8],
   [2,4,6]
 ]
+
 def won?(board)
   result = []
 WIN_COMBINATIONS.each do |win_combination|
@@ -25,4 +26,10 @@ end
 else
   false
 
+end
+
+def full?
+  @board.all? do |entry|
+    entry=="X" || entry=="O"
+  end
 end
